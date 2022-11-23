@@ -34,8 +34,8 @@ jobs:
       run: find . -name Dockerfile
     - name: find all files
       run: ls  
-    - name: run file check4
-      run: ls /gi/gi/target/gi-0.0.1-SNAPSHOT.jar  
+    - name: target folder
+      run: ls ./target 
     - name: run file check5
       run: ls /gi/target/gi-0.0.1-SNAPSHOT.jar  
     - name: run file check6
