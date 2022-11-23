@@ -34,13 +34,9 @@ jobs:
       run: find . -name Dockerfile
     - name: find all files
       run: ls  
-    - name: target folder
-      run: ls ./target 
-    - name: run file check5
-      run: ls /gi/target/gi-0.0.1-SNAPSHOT.jar  
-    - name: run file check6
-      run: ls /target/gi-0.0.1-SNAPSHOT.jar    
-  
+    - name: snapshot
+      run: ls ./target/gi-0.0.1-SNAPSHOT.jar 
+
     - name: Build the Docker image
       run: docker build . --tag vikrantdhir:$(date +%s)
       
