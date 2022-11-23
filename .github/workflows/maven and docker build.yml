@@ -38,7 +38,7 @@ jobs:
       run: ls ./target/gi-0.0.1-SNAPSHOT.jar 
 
     - name: Build the Docker image
-      run: docker build . --tag vikrantdhir:$(date +%s)
+      run: docker build . --tag mastsurfeit/gi:latest    
       
       
     - name: Login to docker hub
@@ -48,4 +48,4 @@ jobs:
        password: ${{secrets.DOCKER_PASSWORD}}
       
     - name: Docker Push 
-      run : docker push ${{secrets.DOCKER_USER}}/poc_repos
+      run : docker push ${{secrets.DOCKER_USER}}/gi:latest
