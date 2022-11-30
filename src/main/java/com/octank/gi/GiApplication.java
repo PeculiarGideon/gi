@@ -27,7 +27,8 @@ public class GiApplication {
 		java.net.InetAddress localMachine = java.net.InetAddress.getLocalHost();
 
 	  	
-       return String.format("Welcome to Octank General Insurance Website running on !"+localMachine  , name);
+       //return String.format("Welcome to Octank General Insurance Website running on !"+localMachine  , name);
+       return String.format("Hello Vikrant from  !"+localMachine  , name);
 	} catch (UnknownHostException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

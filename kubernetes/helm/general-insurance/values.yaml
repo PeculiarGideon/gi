@@ -5,7 +5,8 @@
 replicaCount: 3
 
 image:
-  repository: public.ecr.aws/j1k4s5h3/gi
+  #repository: public.ecr.aws/j1k4s5h3/gi
+  repository: registry.hub.docker.com/r/mastsurfeit/gi
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
