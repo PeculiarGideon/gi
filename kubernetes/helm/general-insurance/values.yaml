@@ -24,6 +24,8 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
+labels: 
+  eks.amazonaws.com/fargate-profile: general-insurance
 
 podAnnotations:
   eks.amazonaws.com/compute-type: fargate
