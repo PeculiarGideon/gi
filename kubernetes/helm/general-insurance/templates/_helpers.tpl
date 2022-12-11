@@ -35,7 +35,7 @@ Common labels
 */}}
 {{- define "general-insurance.labels" -}}
 helm.sh/chart: {{ include "general-insurance.chart" . }}
-eks.amazonaws.com/fargate-profile: {{ .Values.fargate-profile }}
+eks.amazonaws.com/fargate-profile: {{ .Values.labels.eks.amazonaws.com/fargate-profile }}
 {{ include "general-insurance.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
