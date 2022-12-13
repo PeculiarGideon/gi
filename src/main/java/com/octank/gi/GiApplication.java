@@ -28,7 +28,7 @@ public class GiApplication {
 
 	  	
        //return String.format("Welcome to Octank General Insurance Website running on !"+localMachine  , name);
-       return String.format("Welcome Archie ! to Octank General Insurance from Server !"+localMachine  , name);
+       return String.format("Welcome Archie and Lauren ! to Octank General Insurance from Server !"+localMachine  , name);
 	} catch (UnknownHostException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
